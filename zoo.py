@@ -1,4 +1,5 @@
 from animal import Animal
+from species import Species
 
 
 class Zoo():

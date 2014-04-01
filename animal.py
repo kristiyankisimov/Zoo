@@ -1,6 +1,9 @@
+from ramdom import randint
+
+
 class Animal():
-    def __init__(self, species, age, name, gender, weight):
-        self.__species = species
+    def __init__(self, specie, age, name, gender, weight):
+        self.__specie = specie
         self.__age = age
         self.__name = name
         self.__gender = gender
@@ -21,17 +24,17 @@ class Animal():
     def get_weight(self):
         return self.__weight
 
-    def set_species(self, species):
-        self.__species = species
+    def set_species(self, specie):
+        self.__specie = specie
 
-    def set_name(self, name):
-        self.__name = name
+    def update_age(self, age):
+        self.__age += age
+        if self.chance_of_dying() > randint(0, 100):
+            return False
+        return True
 
-    def set_age(self, age):
-        self.__age = age
+    def chance_of_dying(self):
+        return self.__age / self.specie.life_expectancy
 
-    def set_gender(self, gender):
-        self.__gender = gender
-
-    def set_weight(self, weight):
+    def update_weight(self, weight):
         self.__weight = weight
