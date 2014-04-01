@@ -1,5 +1,4 @@
 import sqlite3
-from animal import Animal
 
 
 def load():

@@ -15,10 +15,10 @@ class Animal():
     def get_name(self):
         return self.__name
 
-    def get_gender():
+    def get_gender(self):
         return self.__gender
 
-    def get_weight():
+    def get_weight(self):
         return self.__weight
 
     def set_species(self, species):
@@ -35,12 +35,3 @@ class Animal():
 
     def set_weight(self, weight):
         self.__weight = weight
-
-    def grow(self):
-        self.__age += 1
-
-    def eat(self):
-        pass
-
-    def die():
-        pass
