@@ -27,5 +27,5 @@ class Species():
     def weight_age_ratio(self):
         return self.__weight_age_ratio
 
-    def food_weight_retio(self):
+    def food_weight_ratio(self):
         return self.__food_weight_ratio
