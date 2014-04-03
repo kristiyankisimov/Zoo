@@ -7,7 +7,7 @@ class TestAnimal(unittest.TestCase):
         self.animal = Animal("tiger", 10, "Tig", "male", 175)
 
     def test_properties(self):
-        self.assertEqual(self.animal.species, "tiger")
+        self.assertEqual(self.animal.specie, "tiger")
         self.assertEqual(self.animal.age, 10)
         self.assertEqual(self.animal.name, "Tig")
         self.assertEqual(self.animal.gender, "male")

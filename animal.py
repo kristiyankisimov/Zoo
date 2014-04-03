@@ -2,8 +2,8 @@ from random import randint
 
 
 class Animal():
-    def __init__(self, species, age, name, gender, weight):
-        self.species = species
+    def __init__(self, specie, age, name, gender, weight):
+        self.specie = specie
         self.age = age
         self.name = name
         self.gender = gender
